@@ -14,8 +14,12 @@ console.log(maxWithReduce([-2, -3, -7, 3])); // 3
 
 */
 
-let maxWithReduce = function(nums) {
-    // Your code here
+let maxWithReduce = function (nums) {
+  // Your code here
+  const initialValue = 0;
+  const sumWithInitial = nums.reduce(
+    (accumulator, currentValue) => if (accumulator < currentValue) {accumulator = currentValue}));
+  return sumWithInitial;
 };
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
