@@ -14,9 +14,11 @@ console.log(sumForEach([])); // 0
 let sumForEach = function (arr) {
   // Your code here
   let total = 0;
+
   arr.forEach(function (value) {
     total += value;
   });
+
   return total;
 };
 
